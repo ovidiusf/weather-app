@@ -14,12 +14,11 @@ function searchWeather(){
 
     const URL = `https://api.openweathermap.org/data/2.5/weather?q=${CITY_NAME}&units=metric&appid=${APP_ID}`;
 
-    
-
     Http.fetchData(URL)
         .then(responseData => {
             console.log("success");
-            console.log(responseData);
+            console.log("The response is" , responseData);
+            console.log(URL);
         })
         .catch(error => alert(error));
 }
