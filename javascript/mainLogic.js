@@ -1,5 +1,6 @@
 import * as COMPONENTS from './elements.js'; 
 import {Http} from './requests-http.js';
+import { WeatherInfo } from './weather-info.js';
 
 COMPONENTS.SEARCH_BUTTON.addEventListener('click', searchWeather);
 
@@ -16,8 +17,10 @@ function searchWeather(){
 
     Http.fetchData(URL)
         .then(responseData => {
-            console.log("success");
+            // console.log("success");
             console.log("The response is" , responseData);
+            console.log( responseData.main.temp);
+            const WEATHER_INFO = new WeatherInfo(CITY_NAME, responseData.main.temp);
         })
         .catch(error => alert(error));
 }
