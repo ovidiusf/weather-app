@@ -19,6 +19,7 @@ function searchWeather(){
     Http.fetchData(URL)
         .then(responseData => {
             console.log("success");
+            console.log(responseData);
         })
         .catch(error => alert(error));
 }

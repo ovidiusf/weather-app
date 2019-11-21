@@ -13,9 +13,9 @@ class Http {
                 }
             };
             //testing 
-            HTTP.onload = () => {
-                console.log(HTTP.response);
-            };
+            // HTTP.onload = () => {
+            //     console.log(HTTP.response);
+            // };
             HTTP.send();
         });
     }
