@@ -4,7 +4,7 @@ class Http {
             const HTTP = new XMLHttpRequest();
             HTTP.open('GET', url);
             HTTP.onreadystatechange = function () {
-                //check if the request is done
+                //check if the request is done and the status is ok
                 if(HTTP.readyState == XMLHttpRequest.DONE && HTTP.status == 200){
                     const RESPONSE_DATA = JSON.parse(HTTP.responseText);
                     resolve(RESPONSE_DATA);
@@ -16,3 +16,5 @@ class Http {
         });
     }
 }
+
+export {Http};
