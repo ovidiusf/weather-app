@@ -12,6 +12,10 @@ class Http {
                     reject('Something went wrong');
                 }
             };
+            //testing 
+            HTTP.onload = () => {
+                console.log(HTTP.response);
+            };
             HTTP.send();
         });
     }
