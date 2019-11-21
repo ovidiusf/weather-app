@@ -12,7 +12,7 @@ function searchWeather(){
     }
     console.log(`Click! You entered ${CITY_NAME}`);
 
-    const URL = `https://api.openweathermap.org/data/2.5/weather?q=${CITY_NAME}&units=metric&appid=${APP_ID}`;
+    const URL = `//api.openweathermap.org/data/2.5/weather?q=${CITY_NAME}&units=metric&appid=${APP_ID}`;
 
     Http.fetchData(URL)
         .then(responseData => {
