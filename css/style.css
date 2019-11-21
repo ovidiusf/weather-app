@@ -59,10 +59,11 @@ header h1 {
     border: 1px solid #ccc;
     width: 500px;
     margin: 100px auto auto;
-    background-color: deepskyblue;
+    background-color: #71bf8b;
     box-shadow: 2px 2px 3px #ccc;
     color: white;
     box-sizing: border-box;
+    /* hide the logic when the button is not pressed yet */
     display: none;
     font-weight: bold;
 }
