@@ -23,6 +23,7 @@ function searchWeather(){
     }
     COMPONENTS.LOADING_TEXT_ELEMENT.style.display = 'block';
     COMPONENTS.WEATHER_BOX.style.display = 'none';
+    COMPONENTS.DISPLAY_ERROR.style.display = 'none';
 
     const URL = `https://api.openweathermap.org/data/2.5/weather?q=${CITY_NAME}&units=metric&appid=${APP_ID}`;
 
@@ -35,10 +36,14 @@ function searchWeather(){
             const WEATHER_INFO = new WeatherInfo(CITY_NAME, responseData.weather[0].description.toUpperCase());
             const WEATHER_PROXY = new Proxy(WEATHER_INFO, WEATHER_PROXY_HANDLER);
             WEATHER_PROXY.temperature = responseData.main.temp;
-            updateWeather(WEATHER_PROXY);
+
+            // Simulate a longer delay to test loading animation
+            setTimeout(function() {
+                updateWeather(WEATHER_PROXY)
+            }, 1000);
         })
         .catch(error => {
-            //display the error message passed by the reject
+            //display the error message passed by the Promise reject
             errorHandler(error);
         });
 }

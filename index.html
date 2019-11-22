@@ -19,8 +19,16 @@
             <input type="text" id="city" placeholder="Please type city name..." required>
             <button type="button">Show Weather!</button>
         </div>
-        <div id="load">Loading...</div>
-        <div id="error"></div>
+        <div id="load">
+            <!-- Loading... -->
+            <div class="bouncing-loader">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <div id="error">
+        </div>
         <div id="weather">
             <h1 id="weatherCity">City Name</h1>
 
