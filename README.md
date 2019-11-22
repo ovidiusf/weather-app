@@ -17,3 +17,4 @@ Simple to use web page that provides the **current weather in degrees Celsius** 
 
 -  _Country Feature_
 - Improve error display {css styles}
+- Mobile responsiveness {currently not excellent}
