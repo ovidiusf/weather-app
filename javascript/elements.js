@@ -4,6 +4,7 @@ export const SEARCHED_CITY = document.querySelector('#city');
 
 export const LOADING_TEXT_ELEMENT = document.querySelector('#load');
 export const WEATHER_BOX = document.querySelector('#weather');
+export const DISPLAY_ERROR = document.querySelector('#error');
 
 export const WEATHER_CITY = WEATHER_BOX.firstElementChild;
 export const WEATHER_DESCRIPTION = document.querySelector('#weatherDescription');

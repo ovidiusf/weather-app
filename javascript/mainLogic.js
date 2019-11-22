@@ -2,6 +2,7 @@ import * as COMPONENTS from './elements.js';
 import {Http} from './requests-http.js';
 import { WeatherInfo, WEATHER_PROXY_HANDLER } from './weather-info.js';
 import {updateWeather} from './update-weather.js';
+import {errorHandler} from './error-handler.js';
 
 COMPONENTS.SEARCH_BUTTON.addEventListener('click', searchWeather);
 
@@ -22,7 +23,6 @@ function searchWeather(){
     }
     COMPONENTS.LOADING_TEXT_ELEMENT.style.display = 'block';
     COMPONENTS.WEATHER_BOX.style.display = 'none';
-    // console.log(`Click! You entered ${CITY_NAME}`);
 
     const URL = `https://api.openweathermap.org/data/2.5/weather?q=${CITY_NAME}&units=metric&appid=${APP_ID}`;
 
@@ -37,6 +37,11 @@ function searchWeather(){
             WEATHER_PROXY.temperature = responseData.main.temp;
             updateWeather(WEATHER_PROXY);
         })
-        .catch(error => alert(error));
+        .catch(error => {
+            //display the error message passed by the reject
+            errorHandler(error);
+        });
 }
+
+
 

@@ -6,7 +6,13 @@ Simple to use web page that provides the **Weather** based on the current writte
 
 - [Open Weather Map](http://openweathermap.org/)
 
+## Features:
+
+- City Name Search
+- Button for searching and 'Enter' key functionality
+- Visual error feature if an incorrect city was entered
+
 ## To be done
 
 -  _Country Feature_
-- No more alerts when city is wrong. Implement visual features to HTML and CSS
+- Improve error display {css styles}

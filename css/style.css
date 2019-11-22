@@ -89,6 +89,14 @@ header h1 {
 #load {
     padding: 30px;
     width: 500px;
-    margin: 100px auto auto;
+    margin: 60px auto auto;
+    display: none;
+}
+
+#error {
+    color: red;
+    padding: 20px;
+    width: 400px;
+    margin: 90px auto auto;
     display: none;
 }
