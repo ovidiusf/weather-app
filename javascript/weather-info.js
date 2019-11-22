@@ -14,7 +14,7 @@ export const WEATHER_PROXY_HANDLER = {
         //Fahrenheit
         // const newValue = (value * 1.8 + 32).toFixed(2) + 'F.';
         //Celsius
-        const newValue = (value).toFixed(2) + 'C.';
+        const newValue = (value).toFixed(1) + ' °C';
         return Reflect.set(target, property, newValue);
     }
 };
