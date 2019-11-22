@@ -21,7 +21,7 @@ function searchWeather(){
     if(CITY_NAME.length === 0){
         return alert('Please enter a city name!')
     }
-    COMPONENTS.LOADING_TEXT_ELEMENT.style.display = 'block';
+    COMPONENTS.LOADING_TEXT_ELEMENT.style.display = 'flex';
     COMPONENTS.WEATHER_BOX.style.display = 'none';
     COMPONENTS.DISPLAY_ERROR.style.display = 'none';
 
