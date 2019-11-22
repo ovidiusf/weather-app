@@ -30,8 +30,7 @@ header h1 {
 
 #search label {
     font-weight: bold;
-    color: #003f1c;
-    
+    color: #003f1c; 
 }
 
 #search input {
@@ -154,4 +153,11 @@ header h1 {
         justify-content: center;
     }
 
+    #search button {
+        margin-top: 20px;
+    }
+/* 
+    #search label {
+        margin-bottom: 20px;
+    } */
   }
