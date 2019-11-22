@@ -86,6 +86,10 @@ header h1 {
     float: right;
 }
 
+#weatherCity {
+    text-transform: capitalize;
+}
+
 #load {
     padding: 30px;
     width: 500px;
@@ -140,7 +144,6 @@ header h1 {
     }
     #weather {
         max-width: 300px;
-        /* display: flex; */
         flex-direction: column;
         justify-content: center;
     }

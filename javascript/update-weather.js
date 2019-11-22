@@ -5,6 +5,13 @@ export function updateWeather(weatherInfo){
     COMPONENTS.WEATHER_CITY.textContent = weatherInfo.cityName;
     COMPONENTS.WEATHER_DESCRIPTION.textContent = weatherInfo.description;
     COMPONENTS.WEATHER_TEMPERATURE.textContent = weatherInfo.temperature;
-    COMPONENTS.WEATHER_BOX.style.display = 'flex';
+
+    // checks if the site is mobile or not
+    if(document.body.clientWidth <= 600){
+        COMPONENTS.WEATHER_BOX.style.display = 'flex';
+    }else{
+        COMPONENTS.WEATHER_BOX.style.display = 'block';
+    }
+
     COMPONENTS.LOADING_TEXT_ELEMENT.style.display = 'none';   
 }
