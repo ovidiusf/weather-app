@@ -2,7 +2,9 @@
 
 Simple to use web page that provides the **Weather** based on the current written city.
 
-### Markdown
+### Used API:
+
+- [Open Weather Map](http://openweathermap.org/)
 
 # To be done
 
