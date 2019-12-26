@@ -14,8 +14,9 @@ document.addEventListener('keypress', function(event){
     }
 });
 
-// const APP_ID = 'a00eacd4f0c77125bdb3257781166d76';
-const APP_ID = `${API_KEY}`;
+const APP_ID = 'a00eacd4f0c77125bdb3257781166d76';
+// const APP_ID = `${API_KEY}`;
+
 
 
 function searchWeather(){
