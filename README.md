@@ -11,7 +11,7 @@ Simple to use web page that provides the **current weather in degrees Celsius** 
 - City Name Search
 - Button for searching and 'Enter' key functionality
 - Visual error is displayed, if an incorrect city was entered
-- Loading animation, replacing old 'Loading' text; 1 second delay was added to display this effect.
+- Loading animation, replacing old 'Loading' text; 1 second delay was added to display this effect
 
 ## To be done
 
