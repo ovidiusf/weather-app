@@ -1,0 +1,22 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "description": "Simple to use web page that provides the **current weather in degrees Celsius** based on the typed city.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ovidiusf/weather-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ovidiusf/weather-app/issues"
+  },
+  "homepage": "https://github.com/ovidiusf/weather-app#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0"
+  }
+}
