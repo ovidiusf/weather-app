@@ -496,6 +496,7 @@ process.umask = function() { return 0; };
 (function (process){
 require('dotenv').config();
 console.log(process.env);
+console.log(process.env.API_KEY);
 }).call(this,require('_process'))
 },{"_process":3,"dotenv":5}],5:[function(require,module,exports){
 (function (process){
