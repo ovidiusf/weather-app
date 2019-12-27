@@ -3,6 +3,7 @@ import {Http} from './requests-http.js';
 import { WeatherInfo, WEATHER_PROXY_HANDLER } from './weather-info.js';
 import {updateWeather} from './update-weather.js';
 import {errorHandler} from './error-handler.js';
+import * as KEYS from './secret.js';
 
 COMPONENTS.SEARCH_BUTTON.addEventListener('click', searchWeather);
 
@@ -14,10 +15,7 @@ document.addEventListener('keypress', function(event){
     }
 });
 
-const APP_ID = 'a00eacd4f0c77125bdb3257781166d76';
-// const APP_ID = `${API_KEY}`;
-
-
+const APP_ID = KEYS.APP_KEY;
 
 function searchWeather(){
     const CITY_NAME = COMPONENTS.SEARCHED_CITY.value.trim();
@@ -26,8 +24,8 @@ function searchWeather(){
     }
 
     // checks if the site is mobile or not
-    console.log(document.width);
-    if(document.width <= 600){
+    console.log(document.body.clientWidth);
+    if(document.body.clientWidth <= 600){
         COMPONENTS.LOADING_TEXT_ELEMENT.style.display = 'flex';
     }else{
         COMPONENTS.LOADING_TEXT_ELEMENT.style.display = 'block';
