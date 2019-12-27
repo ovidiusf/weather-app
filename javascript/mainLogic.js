@@ -16,6 +16,7 @@ document.addEventListener('keypress', function(event){
 });
 
 const APP_ID = KEYS.APP_KEY;
+console.log(APP_ID);
 
 function searchWeather(){
     const CITY_NAME = COMPONENTS.SEARCHED_CITY.value.trim();
